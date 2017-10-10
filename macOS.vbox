@@ -11,7 +11,7 @@
       <ExtraDataItem name="GUI/FirstRun" value="yes"/>
     </ExtraData>
     <Hardware>
-      <CPU>
+      <CPU count="2">
         <PAE enabled="true"/>
         <LongMode enabled="true"/>
         <HardwareVirtExLargePages enabled="true"/>
@@ -22,8 +22,8 @@
       <HPET enabled="true"/>
       <Chipset type="ICH9"/>
       <Paravirt provider="Default"/>
-      <Display VRAMSize="16"/>
       <RemoteDisplay enabled="false"/>
+      <Display VRAMSize="128"/>
       <BIOS>
         <IOAPIC enabled="true"/>
       </BIOS>
