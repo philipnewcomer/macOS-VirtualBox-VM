@@ -9,12 +9,20 @@
   <Machine uuid="{7b1bd6ba-342f-4ea9-a5bc-7e0a3e352f42}" name="macOS" OSType="MacOS1013_64" snapshotFolder="Snapshots" lastStateChange="2017-10-09T23:52:48Z">
     <ExtraData>
       <ExtraDataItem name="GUI/FirstRun" value="yes"/>
+      <ExtraDataItem name="VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" value="Iloveapple"/>
+      <ExtraDataItem name="VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" value="iMac11,3"/>
+      <ExtraDataItem name="VBoxInternal/Devices/efi/0/Config/DmiSystemVersion" value="1.0"/>
+      <ExtraDataItem name="VBoxInternal/Devices/smc/0/Config/DeviceKey" value="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"/>
+      <ExtraDataItem name="VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" value="1"/>
     </ExtraData>
     <Hardware>
       <CPU count="2">
         <PAE enabled="true"/>
         <LongMode enabled="true"/>
         <HardwareVirtExLargePages enabled="true"/>
+        <CpuIdTree>
+          <CpuIdLeaf id="1" eax="67301" ebx="1050624" ecx="10019837" edx="3219913727"/>
+        </CpuIdTree>
       </CPU>
       <Memory RAMSize="2048"/>
       <Firmware type="EFI"/>
