@@ -4,7 +4,7 @@ set -e
 hdiutil attach /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/InstallESD.dmg -noverify -mountpoint /Volumes/highsierra
 hdiutil create -o /tmp/HighSierraBase.cdr -size 7316m -layout SPUD -fs HFS+J
 hdiutil attach /tmp/HighSierraBase.cdr.dmg -noverify -mountpoint /Volumes/install_build
-asr restore -source /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/BaseSystem.dmg -target /Volumes/install_build -noprompt -noverify -erase
+asr restore -source /Volumes/highsierra/BaseSystem.dmg -target /Volumes/install_build -noprompt -noverify -erase
 rm /Volumes/OS\ X\ Base\ System/System/Installation/Packages
 cp -R /Volumes/highsierra/Packages /Volumes/OS\ X\ Base\ System/System/Installation
 hdiutil detach /Volumes/OS\ X\ Base\ System/
