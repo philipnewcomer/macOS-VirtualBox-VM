@@ -5,10 +5,19 @@
 ** is running, your changes will be overwritten later, without taking effect.
 ** Use VBoxManage or the VirtualBox Manager GUI to make changes.
 -->
-<VirtualBox xmlns="http://www.virtualbox.org/" version="1.15-macosx">
-  <Machine uuid="{7b1bd6ba-342f-4ea9-a5bc-7e0a3e352f42}" name="macOS" OSType="MacOS1013_64" snapshotFolder="Snapshots" lastStateChange="2017-10-09T23:52:48Z">
+<VirtualBox xmlns="http://www.virtualbox.org/" version="1.15-windows">
+  <Machine uuid="{89554a2c-764a-4b91-9c10-76810d15ad36}" name="OSX" OSType="MacOS1013_64" snapshotFolder="Snapshots" lastStateChange="2018-08-30T07:01:57Z">
+    <MediaRegistry>
+      <HardDisks>
+        <HardDisk uuid="{12d565af-b721-4a6a-a2bb-8d296db294cb}" location="D:/VMs/OSX.vdi" format="VDI" type="Normal"/>
+      </HardDisks>
+      <DVDImages>
+        <Image uuid="{faba06ef-780b-4387-83bc-801376ea42a0}" location="D:/ISO/HighSierra.iso"/>
+      </DVDImages>
+    </MediaRegistry>
     <ExtraData>
-      <ExtraDataItem name="GUI/FirstRun" value="yes"/>
+      <ExtraDataItem name="GUI/LastCloseAction" value="PowerOff"/>
+      <ExtraDataItem name="GUI/LastNormalWindowPosition" value="720,107,1920,1017"/>
       <ExtraDataItem name="VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" value="Iloveapple"/>
       <ExtraDataItem name="VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" value="iMac11,3"/>
       <ExtraDataItem name="VBoxInternal/Devices/efi/0/Config/DmiSystemVersion" value="1.0"/>
@@ -24,34 +33,27 @@
           <CpuIdLeaf id="1" eax="67301" ebx="1050624" ecx="10019837" edx="3219913727"/>
         </CpuIdTree>
       </CPU>
-      <Memory RAMSize="2048"/>
+      <Memory RAMSize="4096"/>
       <Firmware type="EFI"/>
       <HID Pointing="USBTablet" Keyboard="USBKeyboard"/>
       <HPET enabled="true"/>
       <Chipset type="ICH9"/>
       <Paravirt provider="Default"/>
-      <RemoteDisplay enabled="false"/>
       <Display VRAMSize="128"/>
+      <VideoCapture fps="25" options="ac_enabled=false"/>
+      <RemoteDisplay enabled="false"/>
       <BIOS>
         <IOAPIC enabled="true"/>
       </BIOS>
       <USB>
         <Controllers>
           <Controller name="OHCI" type="OHCI"/>
-          <Controller name="EHCI" type="EHCI"/>
         </Controllers>
       </USB>
       <Network>
         <Adapter slot="0" enabled="true" MACAddress="0800279C478B" cable="true" type="82545EM">
           <NAT/>
         </Adapter>
-        <Adapter slot="1" cable="true" type="82545EM"/>
-        <Adapter slot="2" cable="true" type="82545EM"/>
-        <Adapter slot="3" cable="true" type="82545EM"/>
-        <Adapter slot="4" cable="true" type="82545EM"/>
-        <Adapter slot="5" cable="true" type="82545EM"/>
-        <Adapter slot="6" cable="true" type="82545EM"/>
-        <Adapter slot="7" cable="true" type="82545EM"/>
         <Adapter slot="8" type="Am79C973"/>
         <Adapter slot="9" type="Am79C973"/>
         <Adapter slot="10" type="Am79C973"/>
@@ -81,12 +83,18 @@
         <Adapter slot="34" type="Am79C973"/>
         <Adapter slot="35" type="Am79C973"/>
       </Network>
-      <AudioAdapter controller="HDA" driver="CoreAudio" enabled="true"/>
+      <AudioAdapter controller="HDA" driver="DirectSound" enabled="true"/>
       <RTC localOrUTC="UTC"/>
+      <GuestProperties>
+        <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1535612517083306700" flags=""/>
+      </GuestProperties>
     </Hardware>
     <StorageControllers>
       <StorageController name="SATA" type="AHCI" PortCount="2" useHostIOCache="false" Bootable="true" IDE0MasterEmulationPort="0" IDE0SlaveEmulationPort="1" IDE1MasterEmulationPort="2" IDE1SlaveEmulationPort="3">
         <AttachedDevice passthrough="false" type="DVD" hotpluggable="false" port="1" device="0"/>
+        <AttachedDevice type="HardDisk" hotpluggable="false" port="0" device="0">
+          <Image uuid="{12d565af-b721-4a6a-a2bb-8d296db294cb}"/>
+        </AttachedDevice>
       </StorageController>
     </StorageControllers>
   </Machine>
