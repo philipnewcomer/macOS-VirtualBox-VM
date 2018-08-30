@@ -46,5 +46,6 @@ If you don't need to bind with your Apple Id (for example, if you are preparing 
 
 ## Limitations
 
-- No 2D/3D/OpenGL acceleration is supported for macOS, no 3D rendering is working (DRI view show as an empty zone on the screen)
+- No 2D/3D/OpenGL acceleration is supported for macOS, no 3D rendering is working (DRI/OGL view shows as an empty zone on the screen)
 - No Virtualbox Guest Tools are available for macOS, no shared folders are available
+- 1024x768 pixels screen size
