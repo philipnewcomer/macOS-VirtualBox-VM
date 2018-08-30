@@ -15,3 +15,8 @@ This is a preconfigured macOS VirtualBox Virtual Machine, along with a script fo
 7. Quit Disk Utility, and install macOS to the newly initialized hard drive.
 8. When the installer completes, reboot. The VM will boot from the USB drive; remove the disk from the virtual drive and reboot the VM.
 9. With the Installer ISO image not available to boot from, you will be dumped into the EFI Shell. Enter the following at the EFI prompt to boot macOS from the virtual hard drive and finish installation: `FS1:"macOS Install Data\Locked Files\Boot Files\boot.efi"` Alternatively, you can enter `exit` at the prompt to go to the EFI BIOS boot screen, and use the `Boot from file` option to navigate to boot.efi.
+
+## Limitations
+
+- No 2D/3D/OpenGL acceleration is supported for macOS, no 3D rendering is working (DRI view show as an empty zone on the screen)
+- No Virtualbox Guest Tools are available for macOS, no shared folders are available
