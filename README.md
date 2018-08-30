@@ -25,10 +25,10 @@ In the VirtualBox GUI:
   
 ## Part 3: Patch the configuration of the VM you have created.
 
-- For Windows hosts, go to `%USERPROFILE%\.VirtualBox` folder
-- Checkout the `macOS.vbox` file from this git repo and copy `uuid` and `name` properties of `Machine` XML tag from the .vbox of your freshly created configuration into `macOS.vbox`.
-- Remove the .vbox file created by the Virtualbox (and copy the name of it into the clipboard)
-- Rename `macOS.vbox` into the name from your clipboard. Put it into this folder (`%USERPROFILE%\.VirtualBox`)
+- For Windows hosts, go to `%USERPROFILE%\.VirtualBox` directory
+- Checkout the `macOS.vbox` file from this git repo and copy `uuid` and `name` properties of `Machine` XML tag from the `.vbox` of your freshly created configuration into `macOS.vbox`.
+- Remove the `.vbox` file created by the Virtualbox (and copy the name of it to the clipboard)
+- Rename `macOS.vbox` to the name from your clipboard. Put it into this directory (`%USERPROFILE%\.VirtualBox`)
 - Edit the VM's CD and HDD - it will point to a wrong places until you edit it. Point them to a correct images you have created before.
 
 ## Part 4: installation
