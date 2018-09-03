@@ -1,4 +1,4 @@
-# MacOS VirtualBox VM
+# macOS VirtualBox VM
 
 This is a preconfigured macOS VirtualBox Virtual Machine, along with a script for preparing a bootable install ISO image from a downloaded Mac OS installer app.
 
