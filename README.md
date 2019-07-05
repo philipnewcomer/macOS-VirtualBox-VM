@@ -1,3 +1,5 @@
+*This project is no longer maintained. Please use [runMacOSinVirtualBox](https://github.com/AlexanderWillner/runMacOSinVirtualBox) instead.*
+
 # macOS VirtualBox VM
 
 This is a preconfigured macOS VirtualBox Virtual Machine, along with a script for preparing a bootable install ISO image from a downloaded Mac OS installer app.
